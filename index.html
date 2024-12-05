@@ -1,11 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Nagavarshith</title>
-</head>
-<body>
-    <h1>Hii Iam Nagavarshith</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nagavarshith</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/ball.png" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header-row"> 
+        <div class="box"><h1>Nagavarshith</h1></div>
+        <div class="box">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row" id="home">
+        <div style="display: flex;padding-top: 50px;">
+          <div class="box">
+            <h1>Full Stack Developer</h1>
+            <p>
+              Hi! I’m Nagavarshith, a passionate full-stack developer currently in my third year of engineering. I specialize in building web and mobile applications that are both functional and visually appealing.
+            </p>
+            <p>
+              With a keen interest in front-end and back-end technologies, I aim to create seamless user experiences and efficient systems.
+            </p>
+            <button>Explore My Work</button>
+            <button>Contact Me</button>
+          </div>
+          <div class="box">
+            <img src="https://picsum.photos/id/2/400/400" alt="Profile Picture" />
+          </div>
+        </div>
+      </div>
+
+      <div id="projects" class="row" style="background-color: lightcoral">
+        <h1>Projects</h1>
+        <div style="display: flex">
+            <div class="box">
+              <h3>
+                <a href="form.html" style="text-decoration: none; color: inherit;">temp1</a>
+              </h3>
+            </div>
+          </div>
+          
+          <!-- <div class="box">
+            <h3>Portfolio Website</h3>
+            <p>
+                A personal portfolio website to showcase my skills, projects, and services, built using HTML, CSS, and JavaScript.
+            </p>
+        </div>
+        
+        
+          <div class="box">
+            <h3>Task Management Tool</h3>
+            <p>
+              A task management application for teams to track and collaborate on tasks, built using Angular and Firebase.
+            </p>
+          </div> -->
+        </div>
+      </div>
+      <div id="services" class="row" style="background-color: lightblue">
+        <h1>Services</h1>
+        <div style="display: flex">
+          <div class="box">
+            <h3>Web App Development</h3>
+            <p>
+              Creating responsive and user-friendly web applications using modern technologies like React and Angular.
+            </p>
+          </div>
+
+          <div class="box">
+            <h3>Mobile App Development</h3>
+            <p>
+              Developing intuitive and efficient mobile applications for Android and iOS platforms using Flutter.
+            </p>
+          </div>
+
+          <div class="box">
+            <h3>Backend Development</h3>
+            <p>
+              Building scalable and secure backends with frameworks like Node.js and Django, and databases like MongoDB and MySQL.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="about" class="row">
+        <h1>About</h1>
+        <h3>
+          I am a 3rd-year engineering student with a strong passion for full-stack development. I enjoy solving problems and building applications that make a difference.
+        </h3>
+        <h2>Skills</h2>
+        <h3>HTML, CSS, JavaScript, React, Node.js, Angular, Firebase, MySQL</h3>
+        <p>Display the logo of all the technologies you know.</p>
+      </div>
+      <div
+        id="contact"
+        class="row"
+        style="background-color: lightgoldenrodyellow"
+      >
+        <h1>Contact</h1>
+        <div style="display: flex">
+          <div class="box">
+            <h3>Contact Form</h3>
+            <p>
+              <input type="text" placeholder="Enter Name" />
+            </p>
+            <p>
+              <input type="email" placeholder="Enter Email" />
+            </p>
+            <p>
+              <textarea rows="10" cols="60" placeholder="Enter message"></textarea>
+            </p>
+            <button>Send</button>
+          </div>
+
+          <div class="box">
+            <h3>Nagavarshith</h3>
+            <p>
+              <b>Address: </b>123 Engineering Lane, Tech City, India
+            </p>
+            <p>
+              <b>Email Address: </b>johndoe@example.com
+            </p>
+            <p>
+              <b>Phone Number: </b>+91 123 456 7890
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="footer">@copyright 2024. All rights reserved.</div>
+    </div>
+  </body>
 </html>
