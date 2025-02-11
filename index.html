@@ -3,140 +3,263 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nagavarshith</title>
+    <title>Nagavarshith Portfolio</title>
     <link rel="icon" type="image/x-icon" href="assets/images/ball.png" />
     <link rel="stylesheet" href="assets/css/styles.css" />
+    <style>
+      /* General Reset */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Arial", sans-serif;
+      }
+      body {
+        line-height: 1.6;
+      }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      .header-row {
+        text-align: right;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #333;
+        color: white;
+        padding: 20px;
+      }
+      .header-row h1 {
+        font-size: 2em;
+        font-weight: bold;
+      }
+      .header-row img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+      }
+      .header-row ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+      }
+      .header-row ul li a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+      }
+      .header-row ul li a:hover {
+        color: #f7a40b;
+      }
+.hero {
+  display: flex;
+  align-items: center; /* Aligns items vertically */
+  justify-content: space-between; /* Ensures proper spacing between text and image */
+  padding: 100px 20px;
+  background-color: #f4f4f4;
+  flex-wrap: wrap; /* Makes it responsive on smaller screens */
+}
+
+.hero-text {
+  flex: 1;
+  max-width: 50%; /* Limits the width of the text */
+}
+
+.hero img {
+  max-width: 400px; /* Set a reasonable width for the image */
+  height: 400px; ; /* Maintain aspect ratio */
+  border-radius: 10px; /* Optional: rounded corners */
+  margin-left: 20px; /* Add some space between text and image */
+  flex-shrink: 0; 
+}
+
+.hero-content {
+  flex: 1; /* Ensures the text takes up available space */
+  max-width: 50%; /* Limits the width of the text section */
+}
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+.hero button {
+  padding: 10px 20px;
+  background-color: #f7a40b;
+  border: none;
+  color: white;
+  font-size: 1em;
+  border-radius: 5px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+.hero button:hover {
+  background-color: #d48806;
+}
+
+      .row {
+        padding: 50px 20px;
+      }
+      .row h1 {
+        font-size: 2.5em;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .row .box {
+        flex: 1;
+        padding: 20px;
+        text-align: center;
+        border-radius: 10px;
+        margin: 10px;
+      }
+      .row .box img {
+        width: 100%;
+        border-radius: 10px;
+      }
+      .row .box h3 {
+        margin-top: 10px;
+      }
+      .services .box {
+        background-color: white;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease;
+      }
+      .services .box:hover {
+        transform: translateY(-10px);
+      }
+      #about h2 {
+        text-align: center;
+        margin-bottom: 10px;
+      }
+      #about p {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      #contact {
+        text-align: center;
+      }
+      #contact input,
+      #contact textarea {
+        width: 80%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+      }
+      #contact button {
+        padding: 10px 20px;
+        background-color: #28a745;
+        border: none;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .footer {
+        text-align: center;
+        padding: 10px;
+        background-color: #333;
+        color: white;
+      }
+    </style>
   </head>
   <body>
     <div class="container">
-      <div class="header-row"> 
-        <div class="box"><h1>Nagavarshith</h1></div>
-        <div class="box">
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
+      <!-- Header Section -->
+      <div class="header-row">
+       <a href="#">Home</a>
+       <div>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
       </div>
 
-      <div class="row" id="home">
-        <div style="display: flex;padding-top: 50px;">
-          <div class="box">
-            <h1>Full Stack Developer</h1>
-            <p>
-              Hi! I’m Nagavarshith, a passionate full-stack developer currently in my third year of engineering. I specialize in building web and mobile applications that are both functional and visually appealing.
-            </p>
-            <p>
-              With a keen interest in front-end and back-end technologies, I aim to create seamless user experiences and efficient systems.
-            </p>
-            <button>Explore My Work</button>
-            <button>Contact Me</button>
-          </div>
-          <div class="box">
-            <img src="https://picsum.photos/id/2/400/400" alt="Profile Picture" />
-          </div>
+      <!-- Hero Section -->
+      <section class="hero" id="home">
+        <div class="hero-text">
+          <h1>Nagavarshith Siddoju</h1>
+          <br>
+          <p>
+            Hi! I’m Nagavarshith, a passionate full-stack developer currently in my third year of engineering. I specialize in building web and mobile applications that are both functional and visually appealing.
+          </p>
+          <br>
+          <p>With a keen interest in front-end and back-end technologies, I aim to create seamless user experiences and efficient systems.</p>
+          <br>
+          <button>Explore My Work</button>
+          <button>Contact Me</button>
         </div>
-      </div>
+        <div>
+          <!-- <img src="WhatsApp Image 2025-02-11 at 10.43.57_c6c01fd0.jpg" alt="Nagavarshith Image" /> -->
+        </div>
+      </section>
+      
 
-      <div id="projects" class="row" style="background-color: lightcoral">
+      <!-- Projects Section -->
+      <div id="projects" class="row" style="background-color: #f4f4f4">
         <h1>Projects</h1>
-        <div style="display: flex">
-            <div class="box">
-              <h3>
-                <a href="form.html" style="text-decoration: none; color: inherit;">temp1</a>
-              </h3>
-            </div>
-          </div>
-          
-          <!-- <div class="box">
-            <h3>Portfolio Website</h3>
-            <p>
-                A personal portfolio website to showcase my skills, projects, and services, built using HTML, CSS, and JavaScript.
-            </p>
-        </div>
-        
-        
+        <div style="display: flex; flex-wrap: wrap; justify-content: center;">
           <div class="box">
-            <h3>Task Management Tool</h3>
-            <p>
-              A task management application for teams to track and collaborate on tasks, built using Angular and Firebase.
-            </p>
-          </div> -->
+            <h3><a href="https://varshithsidhoju.github.io/online-store/" >Project 1</a></h3>
+            <p>Description of Project 1</p>
+          </div>
+          <div class="box">
+            <h3><a href="https://varshithsidhoju.github.io/Temp/">Project 2</a></h3>
+            <p>Description of Project 2</p>
+          </div>
         </div>
       </div>
-      <div id="services" class="row" style="background-color: lightblue">
+
+      <!-- Services Section -->
+      <div id="services" class="row services">
         <h1>Services</h1>
-        <div style="display: flex">
+        <div style="display: flex; flex-wrap: wrap; justify-content: center;">
           <div class="box">
-            <h3>Web App Development</h3>
-            <p>
-              Creating responsive and user-friendly web applications using modern technologies like React and Angular.
-            </p>
+            <h3>Web Development</h3>
+            <p>Creating responsive web apps using React, Angular, and more.</p>
           </div>
-
           <div class="box">
-            <h3>Mobile App Development</h3>
-            <p>
-              Developing intuitive and efficient mobile applications for Android and iOS platforms using Flutter.
-            </p>
+            <h3>Mobile Development</h3>
+            <p>Developing efficient mobile apps for Android and iOS.</p>
           </div>
-
           <div class="box">
             <h3>Backend Development</h3>
-            <p>
-              Building scalable and secure backends with frameworks like Node.js and Django, and databases like MongoDB and MySQL.
-            </p>
+            <p>Building secure and scalable backend systems.</p>
           </div>
         </div>
       </div>
-      <div id="about" class="row">
-        <h1>About</h1>
-        <h3>
-          I am a 3rd-year engineering student with a strong passion for full-stack development. I enjoy solving problems and building applications that make a difference.
-        </h3>
-        <h2>Skills</h2>
-        <h3>HTML, CSS, JavaScript, React, Node.js, Angular, Firebase, MySQL</h3>
-        <p>Display the logo of all the technologies you know.</p>
-      </div>
-      <div
-        id="contact"
-        class="row"
-        style="background-color: lightgoldenrodyellow"
-      >
-        <h1>Contact</h1>
-        <div style="display: flex">
-          <div class="box">
-            <h3>Contact Form</h3>
-            <p>
-              <input type="text" placeholder="Enter Name" />
-            </p>
-            <p>
-              <input type="email" placeholder="Enter Email" />
-            </p>
-            <p>
-              <textarea rows="10" cols="60" placeholder="Enter message"></textarea>
-            </p>
-            <button>Send</button>
-          </div>
 
-          <div class="box">
-            <h3>Nagavarshith</h3>
-            <p>
-              <b>Address: </b>123 Engineering Lane, Tech City, India
-            </p>
-            <p>
-              <b>Email Address: </b>johndoe@example.com
-            </p>
-            <p>
-              <b>Phone Number: </b>+91 123 456 7890
-            </p>
-          </div>
-        </div>
+      <!-- About Section -->
+      <div id="about" class="row">
+        <h1>About Me</h1>
+        <h2>A Passionate Developer</h2>
+        <p>
+          I'm a 3rd-year engineering student specializing in full-stack
+          development, solving complex problems, and creating user-centric
+          solutions.
+        </p>
       </div>
-      <div class="footer">@copyright 2024. All rights reserved.</div>
+
+      <!-- Contact Section -->
+      <div id="contact" class="row" style="background-color: #f9f9f9">
+        <h1>Contact Me</h1>
+        <p>Get in touch via the form below:</p>
+        <input type="text" placeholder="Your Name" />
+        <input type="email" placeholder="Your Email" />
+        <textarea rows="5" placeholder="Your Message"></textarea>
+        <button>Send</button>
+      </div>
+
+      <!-- Footer -->
+      <div class="footer">
+        &copy; 2025 Nagavarshith Portfolio. All Rights Reserved.
+      </div>
     </div>
   </body>
 </html>

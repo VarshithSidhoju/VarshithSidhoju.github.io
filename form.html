@@ -1,74 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Temp 2</h1>
-    <h2>Forms</h2>
-    <h4>Login Form</h4>
-    <form>
-        <p>
-            <!-- <input type="text" required value="John" readonly> -->
-            <!-- <input type="text" required value="John" disabled>         -->
-            <!-- <input type="text" required value="John" maxlength="10" size="5"> -->
-            <input type="text" required placeholder="Enter Email" autofocus>
-        </p>
-        <p>
-            <input type="password" required placeholder="Enter password">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nagavarshith Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/ball.png" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <style>
+      /* General Reset */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Arial", sans-serif;
+      }
+      body {
+        line-height: 1.6;
+      }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      .header-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #333;
+        color: white;
+        padding: 20px;
+      }
+      .header-row h1 {
+        font-size: 2em;
+        font-weight: bold;
+      }
+      .header-row ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+      }
+      .header-row ul li a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+      }
+      .header-row ul li a:hover {
+        color: #f7a40b;
+      }
+      .hero {
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("https://picsum.photos/id/1015/1200/600");
+        background-size: cover;
+        background-position: center;
+        color: white;
+        text-align: center;
+        padding: 100px 20px;
+      }
+      .hero h1 {
+        font-size: 3em;
+        margin-bottom: 10px;
+      }
+      .hero p {
+        font-size: 1.2em;
+        margin-bottom: 20px;
+      }
+      .hero button {
+        padding: 10px 20px;
+        background-color: #f7a40b;
+        border: none;
+        color: white;
+        font-size: 1em;
+        border-radius: 5px;
+        margin: 0 10px;
+        cursor: pointer;
+      }
+      .hero button:hover {
+        background-color: #d48806;
+      }
+      .row {
+        padding: 50px 20px;
+      }
+      .row h1 {
+        font-size: 2.5em;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .row .box {
+        flex: 1;
+        padding: 20px;
+        text-align: center;
+        border-radius: 10px;
+        margin: 10px;
+      }
+      .row .box img {
+        width: 100%;
+        border-radius: 10px;
+      }
+      .row .box h3 {
+        margin-top: 10px;
+      }
+      .services .box {
+        background-color: white;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease;
+      }
+      .services .box:hover {
+        transform: translateY(-10px);
+      }
+      #about h2 {
+        text-align: center;
+        margin-bottom: 10px;
+      }
+      #about p {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      #contact {
+        text-align: center;
+      }
+      #contact input,
+      #contact textarea {
+        width: 80%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+      }
+      #contact button {
+        padding: 10px 20px;
+        background-color: #28a745;
+        border: none;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .footer {
+        text-align: center;
+        padding: 10px;
+        background-color: #333;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header Section -->
+      <div class="header-row">
+        <div><h1>Nagavarshith</h1></div>
+        <div>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
 
-        </p>
+      <!-- Hero Section -->
+      <section class="hero" id="home">
+        <h1>Welcome to My Portfolio</h1>
         <p>
-            <input type="checkbox" id="chkRemember"><label for="chkRemember">Remember me</label>
+          Passionate full-stack developer creating amazing experiences for the web
+          and mobile platforms.
         </p>
-        <button>Submit</button>
-    </form>
-    <hr>
-    <h4>Signup Form</h4>
-    <form>
-        <fieldset>
-            <legend>Personal Information:</legend>
-            <p>
-                <input type="text" placeholder="Enter Name" required>
-            </p>
-            <p>
-                <input type="text" placeholder="Enter Email">
-            </p>
-            <p>
-                <input type="number" placeholder="Enter Age">
-            </p>
-            <p>
-                State:<br>
-                <select multiple>
-                    <option>Telangana</option>
-                    <option>Andra Pradesh</option>
-                    <option>Kerala</option>
-                </select>
-            </p>
-        </fieldset>
-        <fieldset>
-            <legend>Educational Information:</legend>
-            <p>
-                Skills:<br>
-                <input type="checkbox"><label>HTML</label><br>
-                <input type="checkbox"><label>CSS</label><br>
-                <input type="checkbox"><label>Javascript</label><br>
-            </p>
-            <p>
-                Qualification:<br>
-                <input type="radio" name="Qualification"><label>BE</label><br>
-                <input type="radio" name="Qualification"><label>BTech</label><br>
-            </p>
-        </fieldset>
-        
-        <button>Submit</button>
-         <!-- <input type="submit"> -->
-          <!-- <input type="image" src="assets/images/ball.png"> -->
-        <!-- <input type="button" value="Submit"> -->
-        <input type="reset">
-    </form>
-    
-</body>
+        <button>Explore My Work</button>
+        <button>Contact Me</button>
+      </section>
+
+      <!-- Projects Section -->
+      <div id="projects" class="row" style="background-color: #f4f4f4">
+        <h1>Projects</h1>
+        <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+          <div class="box">
+            <h3><a href="Temp/index.html" >Project 1</a></h3>
+            <p>Description of Project 1</p>
+          </div>
+          <div class="box">
+            <h3>Project 2</h3>
+            <p>Description of Project 2</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Services Section -->
+      <div id="services" class="row services">
+        <h1>Services</h1>
+        <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+          <div class="box">
+            <h3>Web Development</h3>
+            <p>Creating responsive web apps using React, Angular, and more.</p>
+          </div>
+          <div class="box">
+            <h3>Mobile Development</h3>
+            <p>Developing efficient mobile apps for Android and iOS.</p>
+          </div>
+          <div class="box">
+            <h3>Backend Development</h3>
+            <p>Building secure and scalable backend systems.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- About Section -->
+      <div id="about" class="row">
+        <h1>About Me</h1>
+        <h2>A Passionate Developer</h2>
+        <p>
+          I'm a 3rd-year engineering student specializing in full-stack
+          development, solving complex problems, and creating user-centric
+          solutions.
+        </p>
+      </div>
+
+      <!-- Contact Section -->
+      <div id="contact" class="row" style="background-color: #f9f9f9">
+        <h1>Contact Me</h1>
+        <p>Get in touch via the form below:</p>
+        <input type="text" placeholder="Your Name" />
+        <input type="email" placeholder="Your Email" />
+        <textarea rows="5" placeholder="Your Message"></textarea>
+        <button>Send</button>
+      </div>
+
+      <!-- Footer -->
+      <div class="footer">
+        &copy; 2025 Nagavarshith Portfolio. All Rights Reserved.
+      </div>
+    </div>
+  </body>
 </html>
